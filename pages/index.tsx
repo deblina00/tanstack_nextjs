@@ -1,6 +1,7 @@
 // import Head from "next/head";
 // import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import Login from "./auth/login";
 // import styles from "@/styles/Home.module.css";
 
 const geistSans = Geist({
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <>
-      
+      <Login/>
     </>
   );
 }

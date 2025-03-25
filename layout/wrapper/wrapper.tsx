@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import ResponsiveAppBar from "../header/Header";
-import Footer from "../footer/Footer";
+import ResponsiveAppBar from "../header/header";
+import Footer from "../footer/footer";
 
 
 interface props {
