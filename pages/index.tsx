@@ -23,15 +23,15 @@ export default function Home() {
         <Container maxWidth="sm">
           <Typography
             variant="h3"
-            component="h1"
             gutterBottom
             sx={{
               color: "#2f2f2f",
               fontWeight: "bold",
+              mb: 2,
               fontFamily: playfairDisplay.style.fontFamily,
             }}
           >
-            Welcome to My Food Delivery App
+            Welcome to My Food Delicious Hub
           </Typography>
 
           <Button

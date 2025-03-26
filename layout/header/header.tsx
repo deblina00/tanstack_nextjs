@@ -28,6 +28,12 @@ import { useUserStore } from "@/toolkit/store/store";
 import { useCookies } from "react-cookie";
 import toast from "react-hot-toast";
 import { allProfileQuery } from "@/customHooks/query/auth.query.hooks";
+import { Merriweather } from "next/font/google";
+
+const merriweather = Merriweather({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 const ResponsiveAppBar: React.FC = () => {
   const router = useRouter();
@@ -193,16 +199,16 @@ const ResponsiveAppBar: React.FC = () => {
               component="div"
               sx={{
                 mr: 2,
-                fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: ".2rem",
+                letterSpacing: ".1rem",
                 color: "inherit",
                 textDecoration: "none",
                 flexGrow: 1,
                 display: { md: "flex" },
+                fontFamily: merriweather.style.fontFamily,
               }}
             >
-              MY FOOD APP
+              MY FOOD HUB
             </Typography>
 
             <Box
@@ -213,6 +219,7 @@ const ResponsiveAppBar: React.FC = () => {
                 onMouseEnter={(e) => setProductMenuAnchor(e.currentTarget)}
                 aria-controls="product-menu"
                 aria-haspopup="true"
+                sx={{ fontFamily: merriweather.style.fontFamily }}
               >
                 Products
               </Button>
@@ -234,7 +241,7 @@ const ResponsiveAppBar: React.FC = () => {
                     <Link
                       style={{
                         textDecoration: "none",
-                        fontFamily: "monospace",
+                        fontFamily: merriweather.style.fontFamily,
                         color: "inherit",
                       }}
                       href={item.path}
@@ -248,15 +255,28 @@ const ResponsiveAppBar: React.FC = () => {
 
               {token ? (
                 <>
-                  <Button onClick={handleLogout} color="inherit">
+                  <Button
+                    onClick={handleLogout}
+                    color="inherit"
+                    sx={{ fontFamily: merriweather.style.fontFamily }}
+                  >
                     Logout
                   </Button>
-                  <Typography variant="body1" color="#fff" m="10px">
+                  <Typography
+                    variant="body1"
+                    color="#fff"
+                    m="10px"
+                    sx={{ fontFamily: merriweather.style.fontFamily }}
+                  >
                     Hello, {data?.first_name}
                   </Typography>
                 </>
               ) : (
-                <Button onClick={handleLogin} color="inherit">
+                <Button
+                  onClick={handleLogin}
+                  color="inherit"
+                  sx={{ fontFamily: merriweather.style.fontFamily }}
+                >
                   Sign In
                 </Button>
               )}
@@ -296,7 +316,7 @@ const ResponsiveAppBar: React.FC = () => {
                     padding: 0,
                     overflowX: "hidden",
                     bgcolor: "#123C69",
-                    color:"#fff"
+                    color: "#fff",
                   },
                 }}
               >
