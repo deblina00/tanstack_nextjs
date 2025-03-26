@@ -195,14 +195,14 @@ const ResponsiveAppBar: React.FC = () => {
                 mr: 2,
                 fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: ".3rem",
+                letterSpacing: ".2rem",
                 color: "inherit",
                 textDecoration: "none",
                 flexGrow: 1,
                 display: { md: "flex" },
               }}
             >
-              TANSTACK_APP
+              MY FOOD APP
             </Typography>
 
             <Box

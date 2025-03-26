@@ -50,7 +50,7 @@ const ProductCreate: React.FC = () => {
       alignItems="center"
       style={{
         minHeight: "100vh",
-        background: "#EDC7B7",
+        // background: "#EDC7B7",
       }}
     >
       <Paper
@@ -58,7 +58,7 @@ const ProductCreate: React.FC = () => {
           width: "100%",
           maxWidth: 400,
           padding: 25,
-          background: "#EEE2DC",
+          background: "#fff",
           borderRadius: 15,
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.8)",
         }}

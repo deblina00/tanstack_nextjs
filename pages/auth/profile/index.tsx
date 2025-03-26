@@ -33,7 +33,7 @@ const ProfileModal: React.FC<profilemodalProps> = ({ isOpen, onClose }) => {
             transform: "translate(-50%, -50%)",
             width: 350,
             height: 400,
-            bgcolor: "#EEE2DC",
+            bgcolor: "#fff",
             boxShadow: 24,
             p: 4,
             borderRadius: 2,

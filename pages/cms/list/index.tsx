@@ -29,8 +29,6 @@ import {
 } from "@/customHooks/query/cms.query.hooks";
 import { productt } from "@/api/axios/axios";
 import Details from "../details";
-// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 export default function List() {
   const [page, setPage] = useState(1);
   const [isTableView, setIsTableView] = useState(false);
@@ -202,7 +200,7 @@ export default function List() {
           maxWidth: "1600px",
           margin: "0 auto",
           padding: "0 16px",
-          bgcolor: "#EDC7B7",
+         
         }}
       >
         <Typography
@@ -214,17 +212,15 @@ export default function List() {
           Product List
         </Typography>
 
-        <FormControlLabel
-          sx={{ color: "#123C69" }}
-          control={
+        
             <Switch
               style={{ color: "#AC3B61" }}
               checked={isTableView}
               onChange={toggleView}
             />
-          }
-          label="Table View"
-        />
+          
+          
+       
 
         {isPending ? (
           <CircularProgress sx={{ display: "block", margin: "20px auto" }} />

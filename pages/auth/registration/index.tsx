@@ -58,36 +58,16 @@ const Registration: React.FC = () => {
       alignItems="center"
       style={{
         minHeight: "100vh",
-        background: "#EDC7B7",
+        // background: "#EDC7B7",
       }}
     >
-      {/* <Box
-        component="form"
-        sx={{
-          width: "100%",
-          maxWidth: 380,
-          backgroundColor: "#EEE2DC",
-          borderRadius: 2,
-          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.8)",
-          padding: 4,
-        }}
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <Typography
-          variant="h4"
-          component="h1"
-          align="center"
-          sx={{ marginBottom: 3, fontWeight: 500, color: "#AC3B61" }}
-        >
-          Registration Form
-        </Typography> */}
       <Paper
         elevation={10}
         style={{
           padding: 30,
           width: 400,
           borderRadius: 15,
-          background: "#EEE2DC",
+          background: "#fff",
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.8)",
         }}
       >

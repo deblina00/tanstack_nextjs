@@ -79,7 +79,7 @@ const Login: React.FC = () => {
         alignItems="center"
         style={{
           minHeight: "100vh",
-          background: "#EDC7B7",
+          // background: "#EDC7B7",
         }}
       >
         <Paper
@@ -88,7 +88,8 @@ const Login: React.FC = () => {
             padding: 30,
             width: 350,
             borderRadius: 15,
-            background: "#EEE2DC",
+            background: "#fff",
+            // background:"transparent",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.8)",
           }}
         >
@@ -168,7 +169,7 @@ const Login: React.FC = () => {
 
             <Typography
               align="center"
-              sx={{ marginTop: 2, fontWeight: "bold" }}
+              sx={{  fontWeight: "bold" }}
             >
               Don't have an account?
               <Link
